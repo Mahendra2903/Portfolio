@@ -1,0 +1,296 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Mahendranath Reddy Palle</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Mahendranath Reddy Palle</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic-mahi.png" alt="Mahendranath Reddy Palle profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Mahendranath Reddy Palle</h1>
+        <p class="section__text__p2">Cloud Engineer</p>
+        
+
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/MahendraPalle_Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/mahendrapalle/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Mahendra2903'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+     
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br />Azure & SAP Basis Administrator</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Masters in Computer Science<br />  Bachelors in Electronics and Communication</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Hi, I’m <strong>Mahendranath Reddy Palle</strong>, a Cloud Engineer with over two years of experience in designing, deploying, and managing scalable cloud solutions. 
+              Currently pursuing my <strong>Master’s in Computer Science</strong> at <strong>Purdue University</strong> (graduating May 2025), I specialize in optimizing cloud infrastructure 
+              and automating workflows to drive efficiency and reliability.
+          </p>
+          <p>
+              As a <strong>Microsoft Azure Administrator (AZ-104) Certified Professional</strong>, I bring hands-on expertise in <strong>Azure, AWS, GCP</strong>, and 
+              <strong>Infrastructure as Code (IaC)</strong> tools like <strong>Terraform</strong>. My experience includes managing <strong>SAP workloads on Azure</strong>, implementing 
+              <strong>secure resource management</strong>, and integrating <strong>CI/CD pipelines</strong> to streamline deployments and maintain high availability.
+          </p>
+          <p>
+              I am passionate about solving complex challenges in cloud automation, performance monitoring, and security, with a strong focus on delivering future-ready, scalable architectures. 
+              Feel free to explore my projects below to see how I apply my skills to real-world cloud and infrastructure management challenges.
+          </p>
+      </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="container">
+        <div class="experience-details-container">
+          <!-- First Experience -->
+          <div class="experience-item">
+              <h3>Azure/SAP Administrator</h3>
+              <span>Cognizant (Client: Orica)</span>
+              <span class="date">July 2021 – July 2023</span>
+              <div class="experience-content">
+                  <ul>
+                      <li>Administered Azure infrastructure for SAP systems, ensuring high availability, security, and scalability.</li>
+                      <li>Automated resource provisioning and deployments using Terraform.</li>
+                      <li>Monitored SAP application performance with Azure Monitor and Log Analytics.</li>
+                      <li>Configured Azure Blob Storage and Data Lake for secure, scalable data solutions.</li>
+                      <li>Designed disaster recovery strategies with Azure Site Recovery.</li>
+                  </ul>
+              </div>
+          </div>
+      
+          <!-- Second Experience -->
+          <div class="experience-item">
+              <h3>Software Intern</h3>
+              <span>Core el Technologies</span>
+              <span class="date">May 2020 – June 2020</span>
+              <div class="experience-content">
+                  <ul>
+                      <li>Analyzed and visualized large datasets using Python, Pandas, NumPy, and Matplotlib.</li>
+                      <li>Cleaned and processed data efficiently to deliver actionable insights.</li>
+                      <li>Developed advanced visualization techniques to communicate findings effectively.</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+     </div>        
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:mahendrareddyp.29@gmail.com">mahendrareddyp.29@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/mahendrapalle/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Mahendranath Reddy Palle. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
